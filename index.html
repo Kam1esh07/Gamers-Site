@@ -1,0 +1,503 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gaming Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+   <header>
+      <a href="#" class="logo ">Gamers</a>
+      <ul class="nav">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#games">Games</a></li>
+         <li><a href="#tournaments">Tournaments</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li><a href="#about">About</a></li>
+      </ul>
+      <div class="action">
+         <div class="searchbx">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <input type="text" placeholder="Search Games">
+         </div>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+   </header>
+
+   <!--Home Banner -->
+   <div class="banner" id="home">
+      <div class="bg">
+         <div class="content">
+            <h2>A New Home for<br>
+               Game Lovers</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatum. </p>
+            <a href="#" class="btn">Join Now</a>
+         </div>
+         <img src="pngegg.png">
+      </div>
+   </div>
+
+   `<!-- About -->
+   <div class="About" id="About">
+      <div class="contentBx">
+         <h2>About Us</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem, reprehenderit architecto quos
+            nesciunt sunt, repellendus saepe laborum facere aut adipisci voluptates eligendi voluptatum et vitae minus
+            magni earum alias!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugit iure, neque placeat laboriosam, officiis
+            facilis excepturi similique sed ipsam dolores blanditiis aspernatur, eius ea. Quidem magni quae eos neque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque sed sequi iusto. Sapiente dolore
+            alias doloremque voluptate nam ut! Vero recusandae facilis placeat minima corrupti impedit, similique
+            assumenda rem?
+         </p>
+         <a href="#">Read more</a>
+      </div>
+      <img src="vr-gaming.png">
+   </div>
+
+   <!-- Games -->
+   <div class="games" id="games">
+      <h2>Popular Games</h2>
+      <ul>
+         <li class="list active" data-filter="all">All</li>
+         <li class="list" data-filter="pc">PC games</li>
+         <li class="list" data-filter="mobile">Mobile games</li>
+      </ul>
+      <div class="cardBx">
+         <div class="card" data-item="pc">
+            <img src="Grand_Theft_Auto_V.png">
+            <div class="content">
+               <h4>Grand Theft Auto V</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a> 
+               </div>
+            </div>
+         </div>
+
+         <div class="card" data-item="pc">
+            <img src="Battleground_Mobile_India.webp.png">
+            <div class="content">
+               <h4>Battleground Mobile India</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="card" data-item="PC">
+            <img src="Red_Dead_Redemption_II.jpg">
+            <div class="content">
+               <h4>Red Dead Redemption II</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="PC">
+            <img src="hitmen.jpg">
+            <div class="content">
+               <h4>Hitmen</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="PC">
+            <img src="The Wwitcher 3.jpg">
+            <div class="content">
+               <h4>The Wwitcher 3</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="PC">
+            <img src="granny-.jpg">
+            <div class="content">
+               <h4>Granny</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="mobile">
+            <img src="subway surfers.png">
+            <div class="content">
+               <h4>Subway Surfers</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="mobile">
+            <img src="DR  DRIVING.png">
+            <div class="content">
+               <h4>DR DRIVING</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="mobile">
+            <img src="uno.png">
+            <div class="content">
+               <h4>UNO</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="mobile">
+            <img src="GTA SA.jpg">
+            <div class="content">
+               <h4>Grand Theft Auto san andrass</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="pc">
+            <img src="MINECRAFT.jpg">
+            <div class="content">
+               <h4>MINECRAFT</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="pc">
+            <img src="cyberpunk-2077.png">
+            <div class="content">
+               <h4>CYBER PUNK-2077</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="pc">
+            <img src="RFS Real Flight simulator.jpg">
+            <div class="content">
+               <h4>Real Flight Simulator</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="pc">
+            <img src="Super Mario.png">
+            <div class="content">
+               <h4>Super Mario</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+         <div class="card" data-item="mobile">
+            <img src="CS GO.jpg">
+            <div class="content">
+               <h4>Counter strick</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                  <p>Pricing<br><span>$100</span></p>
+                  <a href="#">Play Now</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Tournaments -->
+   <div class="tournaments" id="tournaments">
+      <h2>Live tournaments</h2>
+      <div class="boxBx">
+         <div class="box">
+            <img src="turnament.jpeg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <img src="turnament4.webp">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="turnament3.jpg">
+            <div class="content">
+               <h4><span>50</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="turnament2.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="valorant.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="fortnight.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="call of duty.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="dota2.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="mobile legends.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+
+         </div>
+         <div class="box">
+            <img src="chess.jpg">
+            <div class="content">
+               <h4><span>100</span>Matches in progress..</h4>
+               <p>DISCLIMER <BR>
+                  Place your ui and pay 50$ for playing this turnament and coming on the time then you not coming we
+                  will starting this turnamen.
+               </p>
+               <div class="btn">
+                  <a href="#" class="watch">watch</a>
+                  <a href="#" class="join">join now</a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+     <!-- Testimonials -->
+     <div class="testimonials">
+      <h2>What Our Gamers Say</h2>
+      <div class="testimonial-card">
+         <p>"Great platform, excellent games, and a strong community!" - Player 1</p>
+      </div>
+      <div class="testimonial-card">
+         <p>"The best place to compete and improve your skills." - Player 2</p>
+      </div>
+   </div>
+
+   <!-- FAQ -->
+   <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+         <h3>How do I join a tournament?</h3>
+         <p>You can join a tournament by signing up and paying the entry fee. Check the live tournaments section for available ones.</p>
+      </div>
+      <div class="faq-item">
+         <h3>What games can I play?</h3>
+         <p>We offer both PC and mobile games. Browse through the Popular Games section to explore them.</p>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <footer>
+      <div class="contact" id="contact">
+         <img src="contect us.jpg">
+         <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+               <p>Enter Name</p>
+               <input type"text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+               <p>Enter Email</p>
+               <input type"text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+               <p>Message</p>
+               <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+               <input type="submit" name="submit">
+            </div>
+         </div>
+      </div>
+      <div class="info" id="about">
+         <a href="#" class="logo">Gamers</a>
+         <p><i class='bx bx-copyright'></i>2025 All rights reserved.</p>
+         <ul>
+            <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+         </ul>
+      </div>
+   </footer>
+   <script>
+      /* Sticky NavBar */
+      window.addEventListener('scroll', function () {
+         var header = document.querySelector('header');
+         header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+      /* Responsive NavBar */
+
+      function toggleMenu(){
+         const toggleMenu = document.querySelector('.toggleMenu');
+         const nav = document.querySelector('.nav');
+         toggleMenu.classList.toggle('active')
+         nav.classList.toggle('active')
+      }
+
+      /* Filterable Cards */
+
+      let list = document.querySelectorAll('.list');
+      let card = document.querySelectorAll('.card');
+
+      for (let i = 0; i < list.length; i++) {
+         list[i].addEventListener('click', function () {
+            for (let j = 0; j < list.length; j++) {
+               list[j].classList.remove('active');
+            }
+            this.classList.add('active');
+
+            let dataFilter = this.getafteribute('data-filter');
+
+            for (let k = 0; k.card.length; k++) {
+               card[k].classList.remove('active');
+               card[k].classList.add('hide');
+
+               if (card[k].getAttribute('data-item') == dataFilter || dataFilter) {
+                  card[k].classList.remove('hide');
+                  card[k].classList.add('active');
+               }
+            }
+         })
+      }
+   </script>
+</body>
+
+</html>
